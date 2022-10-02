@@ -1,0 +1,205 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196F3;
+  --white-text-color: #FFFFFF;
+  --primary-background-color: #F5F5F5;
+  --secondary-background-color: #F5F4FA;
+  --footer-background-color: #2F303A;
+  --button-active-color: #188CE8;
+}
+body {
+  font-family: 'Roboto', 'sans-serif';
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  font-size: 14px;
+  font-weight: 400;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* header-logo */
+.header-logo {
+  color: #000000;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+
+/* header-nav */
+.nav-items .link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-items .link:hover,
+.nav-items .link:focus {
+  color: var(--accent-color);
+}
+.nav-items .link.current {
+  color: var(--accent-color);
+}
+.contacts .contact-item {
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.contacts .contact-item:hover,
+.contacts .contact-item:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+.hero {
+  background-color: var(--footer-background-color);
+  text-align: center; 
+}
+.hero-title {
+  color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.hero-button {
+  font-family: inherit;
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  background-color: var(--accent-color);
+  border: none;
+  cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--button-active-color);
+}
+
+/* section */
+.section-subtitle {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.section-text {
+  line-height: 1.71;
+}
+.section-ourteam {
+  background-color: var(--secondary-background-color);
+}
+.section-title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.section-title-name {
+  color: var(--secondary-text-color);
+  background-color: var(--white-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.section-title-job {
+  background-color: var(--white-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* footer */
+.footer {
+  background-color: var(--footer-background-color);
+}
+.footer-logo {
+  color: var(--white-text-color);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.adress {
+  font-style: normal;
+}
+.footer-contacts .link {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer .footer-adress {
+  color: var(--white-text-color);
+}
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--accent-color);
+}
+.footer-adress:hover,
+.footer-adress:focus {
+  color: var(--accent-color);
+}
+
+/* portfolio */
+.portfolio-filter .portfolio-button {
+  font-family: inherit;
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  background-color: var(--secondary-background-color);
+  border: none;
+}
+.portfolio-filter .portfolio-button:hover,
+.portfolio-filter .portfolio-button:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+.presentations-titel {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.presentations-item {
+  color: inherit;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+}
