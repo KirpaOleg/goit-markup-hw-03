@@ -7,6 +7,7 @@
   --secondary-background-color: #F5F4FA;
   --footer-background-color: #2F303A;
   --button-active-color: #188CE8;
+  --primary-indent: 94px;
 }
 body {
   font-family: 'Roboto', 'sans-serif';
@@ -149,7 +150,7 @@ border-bottom: 1px solid #ECECEC;
 
 /* section */
 .section {
-  padding-top: 94px;
+  padding-top: var(--primary-indent);
 }
 .caption, .pic {
   display: flex;
@@ -182,7 +183,7 @@ border-bottom: 1px solid #ECECEC;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-top: 94px;
+  padding-top: var(--primary-indent);
   padding-bottom: 50px;
 }
 .team {
@@ -212,7 +213,7 @@ border-bottom: 1px solid #ECECEC;
   padding-bottom: 30px;
 }
 .section-ourteam {
-  padding-bottom: 94px;
+  padding-bottom: var(--primary-indent);
 }
 
 /* footer */
@@ -261,7 +262,7 @@ border-bottom: 1px solid #ECECEC;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 94px;
+  padding-top: var(--primary-indent);
   padding-bottom: 50px;
 }
 .portfolio-filter .portfolio-button {
@@ -315,5 +316,5 @@ border-bottom: 1px solid #ECECEC;
 padding-bottom: 20px;
 } 
 .holder {
-  padding-bottom: 94px;
+  padding-bottom: var(--primary-indent);
 }
