@@ -103,7 +103,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
 }
 .header {
 border-bottom: 1px solid #ECECEC;
@@ -286,7 +285,6 @@ border-bottom: 1px solid #ECECEC;
   color: var(--white-text-color);
   background-color: var(--accent-color);
   border-radius: 4px;
-
 }
 .presentations-titel {
   color: var(--secondary-text-color);
