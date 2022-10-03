@@ -30,7 +30,6 @@ img {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
 }
 .list {
   list-style: none;
@@ -104,6 +103,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+ 
+}
+.header {
+border-bottom: 1px solid #ECECEC;
 }
 
 /* hero */
@@ -180,6 +183,17 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+.team-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
 }
 .section-title-name {
   color: var(--secondary-text-color);
@@ -188,12 +202,18 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .section-title-job {
   background-color: var(--white-text-color);
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-bottom: 30px;
+}
+.section-ourteam {
+  padding-bottom: 94px;
 }
 
 /* footer */
@@ -207,6 +227,8 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  display: inline-block;
+  padding-bottom: 20px;
 }
 .adress {
   font-style: normal;
@@ -227,22 +249,44 @@ img {
 .footer-adress:focus {
   color: var(--accent-color);
 }
+.footer-contacts .item:nth-child(-n + 2) {
+  padding-bottom: 9px;
+}
+.box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 /* portfolio */
+.portfolio-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
 .portfolio-filter .portfolio-button {
   font-family: inherit;
-  color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  background-color: var(--secondary-background-color);
   border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+.portfolio-filter .filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 .portfolio-filter .portfolio-button:hover,
 .portfolio-filter .portfolio-button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--white-text-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
+
 }
 .presentations-titel {
   color: var(--secondary-text-color);
@@ -250,10 +294,28 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding: 20px 24px 4px 24px;
 }
 .presentations-item {
   color: inherit;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
+  padding: 0px 24px 20px 24px;
+}
+.portfolio-presentations{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+}
+.portfolio-presentations > .card {
+  flex-basis: calc((100% - 90px) / 3);
+  border: 1px solid #EEEEEE;
+}
+.portfolio-card {
+padding-bottom: 20px;
+} 
+.holder {
+  padding-bottom: 94px;
 }
